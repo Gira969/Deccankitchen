@@ -1,0 +1,36 @@
+<section id = header>
+    <div class="adress-section">
+      <span class="iconify" data-icon="simple-icons:googlemaps" data-inline="false" style="color: white;" data-width="3rem" data-height="3rem"></span>
+      <p class="">No. 5, Kasturba Mahila Society , Near I N Tekrawala School , Palanpur Patia, Surat - 395009.</p>
+
+    </div>
+    <nav class="navbar navbar-expand-lg">
+    <span class="iconify icon" data-icon="si-glyph:hat-chef" data-inline="false" style="color: #cf7500;" data-width="3rem" data-height="3rem"></span>
+    <a class="navbar-brand mb-0 h1" href="#">The Deccan Kitchen</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+      <div class="collapse navbar-collapse" id ="bs-example-navbar-collapse-1" > 
+           <a href="/shopping-cart/ " style="color :#cf7500;" class="shopping-cart-align"><i class="fa fa-shopping-cart" aria-hidden="true" style="color :#cf7500;"></i> Shopping Cart <span class="badge"> {{session.cart.totalQty}}</span></a>
+      </div>
+
+        <ul class="nav navbar-nav navbar-right ">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" class="nav-item dropdown" >User Managements</a>
+        <div class="dropdown-menu">{{# if login }}
+            <a class="dropdown-item" href="/user/profile">User Account</a>
+           
+            <a class="dropdown-item" href="/user/logout">Logout</a>
+          {{ else }}
+          <a class="dropdown-item" href="/user/signup">Sign Up</a>
+          
+          <a class="dropdown-item" href="/user/signin">Sign In</a>
+            {{/if}}
+        </div>
+     
+    </ul>
+   
+  
+  </nav>
+
+</section>
